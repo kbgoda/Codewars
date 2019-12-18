@@ -14,7 +14,7 @@ public class eqSidesArray {
 		// Answer is 1
 		System.out.println(findEvenIndex(nums3));
 	}
-
+	
 	public static int findEvenIndex(int[] arr) {
 		 int arrLength = arr.length;
 		 int i = 0;
@@ -38,12 +38,12 @@ public class eqSidesArray {
 		    	 for(i = 1; i < arrLength; i++) {
 			    	 sumRight -= arr[i];
 			    	 if(sumRight == sumLeft) {
-			    		 return i;
+			    		 return i;		    		 
 			    	 }
 			    	 sumLeft += arr[i];
 			     }
-			     return -1;
-		     }
+			     return -1;	     	 
+		     }  
 	     }
 	  }
 }
